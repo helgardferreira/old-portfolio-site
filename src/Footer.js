@@ -1,0 +1,27 @@
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+
+export default function Footer() {
+  const useStyles = makeStyles(theme => ({
+    footer: {
+      backgroundColor: theme.palette.tertiary.dark,
+      color: theme.palette.text.main,
+      padding: theme.spacing(3),
+    },
+  }));
+  const classes = useStyles();
+
+  return (
+    <footer className={classes.footer}>
+      <Typography variant="body2" color="inherit" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://www.helgard.dev">
+          helgard.dev
+        </Link>{' '}
+        2019.
+      </Typography>
+    </footer>
+  );
+}

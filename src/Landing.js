@@ -139,8 +139,9 @@ export default function Landing() {
               >
                 Helgard Richard Ferreira
               </a>
-              , full stack engineer by trade, problem solver at heart. Fluent at
-              JavaScript - particularly React, Vue.js, and Node.js.
+              , a full-stack developer by trade and a problem solver at heart.
+              Fluent at JavaScript – particularly React, Vue.js, and Node.js.
+              I’m passionate and a fast learner at that.
             </Typography>
           </div>
         </Container>

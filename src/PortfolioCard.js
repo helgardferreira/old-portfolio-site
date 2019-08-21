@@ -79,13 +79,23 @@ export default function PortfolioCard({
         {android || iOS ? (
           <CardActions>
             {android ? (
-              <AndroidButton variant="contained" href={android} target="_blank">
+              <AndroidButton
+                variant="contained"
+                href={android}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Android
                 <Icon className={`${classes.icon} fa fa-android`} />
               </AndroidButton>
             ) : null}
             {iOS ? (
-              <IOSButton variant="contained" href={iOS} target="_blank">
+              <IOSButton
+                variant="contained"
+                href={iOS}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 iOS
                 <Icon className={`${classes.icon} fa fa-apple`} />
               </IOSButton>

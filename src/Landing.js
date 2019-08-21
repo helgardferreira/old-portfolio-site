@@ -60,16 +60,18 @@ const useStyles = makeStyles(theme => ({
     color: '#ffffff',
   },
   logoContainer: {
-    position: 'relative',
-    height: theme.spacing(50),
+    textAlign: 'center',
   },
   logo: {
-    height: theme.spacing(50),
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    textAlign: 'center',
+    [theme.breakpoints.up('sm')]: {
+      width: theme.spacing(60),
+    },
+    [theme.breakpoints.between('xs', 'sm')]: {
+      width: '50vw',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '80vw',
+    },
   },
 }));
 
@@ -134,7 +136,9 @@ export default function Landing() {
             </Typography>
             <Typography variant="h5" align="center" color="inherit" paragraph>
               <a
-                href="https://github.com/helgardferreira"
+                href="https://www.linkedin.com/in/helgard-richard-ferreira/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={classes.name}
               >
                 Helgard Richard Ferreira
@@ -158,14 +162,14 @@ export default function Landing() {
             What Have I Done?
           </Typography>
           <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} className={classes.logoContainer}>
+            <Grid item xs={12} md={6} className={classes.logoContainer}>
               <img
                 src={ProteusLogo}
                 alt="Proteus logo"
                 className={classes.logo}
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={6}>
               <Box
                 display="flex"
                 alignItems="center"
